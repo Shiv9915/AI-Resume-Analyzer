@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input {
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background: #1f2937;
+  border-radius: 10px;
+}
+
+.score {
+  font-size: 40px;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.matched {
+  background: #16a34a;
+  color: white;
+}
+
+.missing {
+  background: #dc2626;
+  color: white;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #374151;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #22c55e;
+  transition: width 0.5s ease;
+}
