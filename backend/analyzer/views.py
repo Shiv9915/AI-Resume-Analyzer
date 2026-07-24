@@ -45,6 +45,10 @@ def upload_resume(request):
             }
         })
     
-    return Response(serializer.errors)
+    return Response({
+        "errors": serializer.errors,
+        "data": request.data,
+        "files": list(request.FILES.keys())
+    }, status=400)
 
     
