@@ -66,7 +66,7 @@ function App() {
     try {
       console.log("Sending Request...");
       const response = await axios.post(
-        "http://127.0.0.1:8000/upload-resume/",
+        `${import.meta.env.VITE_BACKEND_URL}/upload-resume/`,
         formData,
       );
 
