@@ -66,7 +66,7 @@ function App() {
     try {
       console.log("Sending Request...");
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/upload-resume/`,
+        'https://ai-resume-analyzer-0sns.onrender.com/upload-resume/',
         formData,
       );
 
